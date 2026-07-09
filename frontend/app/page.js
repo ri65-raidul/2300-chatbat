@@ -67,6 +67,10 @@ export default function Home() {
           <p className="text-gray-500">
             ECE 2300 ChatBot - Ask about course syllabus.
           </p>
+
+          <p className="mt-2 text-sm text-zinc-500">
+            Responses are generated from the uploaded course documents and may occasionally be incomplete or inaccurate.
+          </p>
         </div>
 
         <div className="flex-1">

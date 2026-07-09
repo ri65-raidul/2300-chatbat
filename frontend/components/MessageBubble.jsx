@@ -1,4 +1,5 @@
 //import SourceList from "./SourceList";
+import TypingIndicator from "./TypingIndicator";
 
 
 export default function MessageBubble({ message }) {
@@ -13,7 +14,13 @@ export default function MessageBubble({ message }) {
                     : "bg-zinc-900 text-zinc-100 border border-zinc-800"
                 }`}
             >
-                <p className="whitespace-pre-wrap">{message.text}</p>
+                <p className="whitespace-pre-wrap">
+                    {message.text === "Thinking..." ? (
+                        <TypingIndicator />
+                    ) : (
+                        <p>{message.text}</p>
+                    )}
+                </p>
             </div>
         </div>
     );
