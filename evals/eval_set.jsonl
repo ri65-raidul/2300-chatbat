@@ -1,0 +1,11 @@
+{
+    "id"                : "q001", 
+    "question"          : "What is the late assignment policy", 
+    "category"          : "policy",
+    "expected behavior" : "answer",
+    "ground_truth"      : "",
+    "must_contain"      : [],
+    "source_doc"        : "syllabus.pdf",
+    "source_selection"  : "Late Assignment Policy",
+    "notes"             : ""
+}
