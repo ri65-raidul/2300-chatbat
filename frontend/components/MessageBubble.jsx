@@ -14,13 +14,13 @@ export default function MessageBubble({ message }) {
                     : "bg-zinc-900 text-zinc-100 border border-zinc-800"
                 }`}
             >
-                <p className="whitespace-pre-wrap">
+                <div className="whitespace-pre-wrap">
                     {message.text === "Thinking..." ? (
                         <TypingIndicator />
                     ) : (
                         <p>{message.text}</p>
                     )}
-                </p>
+                </div>
             </div>
         </div>
     );
